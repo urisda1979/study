@@ -33,3 +33,46 @@ body {
     text-transform: uppercase;
     color: #E3B873;
 }
+
+.main_header {
+    position: absolute;
+    left: 0%;
+    right: 0.14%;
+    top: 10.51%;
+    bottom: 0%;
+    background: rgba(0, 0, 0, 0.7);
+    background-image: url('../img/background-image.jpg');
+}
+
+.main_header .title {
+    position: absolute;
+    left: 9.31%;
+    right: 43.74%;
+    top: 35.06%;
+    bottom: 51.65%;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.main_header .city {
+    color: #E3B873;
+}
+
+.main_header p {
+    position: absolute;
+    left: 9.31%;
+    right: 55.69%;
+    top: 50.76%;
+    bottom: 37.97%;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
