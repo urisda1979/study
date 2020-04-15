@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: relative;
+    width: 1440px;
+    height: 790px;
+    background: #FFFFFF;
+}
+
+.navbar {
+    position: absolute;
+    left: 0%;
+    right: 0.14%;
+    top: 0%;
+    bottom: 89.49%;
+    background: #131313;
+}
+
+.logo {
+    position: absolute;
+    left: 6.39%;
+    right: 81.13%;
+    top: 4.68%;
+    bottom: 94.05%;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #E3B873;
+}
