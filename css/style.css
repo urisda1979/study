@@ -1,3 +1,8 @@
+@font-face {
+    src: url('../fonts/NunitoSans-Regular.ttf');
+    font-family: "Nunito Sans";
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -75,4 +80,5 @@ body {
     font-size: 22px;
     line-height: 36px;
     color: #FFFFFF;
+    user-select: none;
 }
