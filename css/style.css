@@ -11,44 +11,86 @@ body {
 a {
     text-decoration: none;
 }
+
 .header {
     position: relative;
     width: 1440px;
     height: 790px;
-    background: #FFFFFF;
+    background: #131313;
 }
 
 .navbar {
     position: absolute;
-    left: 0%;
-    right: 0.14%;
-    top: 0%;
-    bottom: 89.49%;
+    width: 1256px;
+    left: 92px;
+    top: 0;
+    padding-top: 37px;
     font-family: Nunito Sans;
     font-size: 11px;
-    line-height: 15px;
+    font-weight: normal;
     text-transform: uppercase;
     background: #131313;
 }
 
 .navbar .logo {
     position: absolute;
-    left: 6.39%;
-    top: 37px;   
+    left: 0;
+    width: 180px;
     color: #E3B873;
 }
 
 .navbar .nav {   
+    display: flex;
     position: absolute;
-    left: 25.5%;
-    top: 37px;
-  
-}
+    left: 275px;
+    padding: 0;
+ }
 
 .navbar .nav .menu {
     display: flex;
+    margin: 0;
+    padding: 0;
     width: 581px;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.navbar .nav .menu li a {
+    color: #ffffff;
+    list-style-type: none;
+}
+
+.navbar .nav .menu li .active {
+    color: #E3B873;
+}
+
+.navbar .phone {
+    position: absolute;
+    left: 924px;
+    font-style: normal;
+    line-height: 15px;
+    text-align: right;
+    font-family: Nunito Sans;
+    color: #E3B873;
+    text-decoration-line: underline;
+    
+}
+
+.navbar .button {
+    position: absolute;
+    top: 24px;
+    right: 0;
+    width: 161px;
+    height: 37px;
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border: none;
+    border-radius: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: Nunito Sans;
+    font-style: italic;
+    font-size: 11px;
+    color: #ffffff;
 }
 
 .main_header {
@@ -63,10 +105,8 @@ a {
 
 .main_header .title {
     position: absolute;
-    left: 9.31%;
-    right: 43.74%;
-    top: 35.06%;
-    bottom: 51.65%;
+    left: 134px;
+    top: 194px;
     font-family: Yeseva One;
     font-style: normal;
     font-weight: normal;
@@ -82,10 +122,9 @@ a {
 
 .main_header p {
     position: absolute;
-    left: 9.31%;
-    right: 55.69%;
-    top: 50.76%;
-    bottom: 37.97%;
+    left: 134px;
+    top: 318px;
+    width: 504px;    
     font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
@@ -94,3 +133,36 @@ a {
     color: #FFFFFF;
     user-select: none;
 }
+
+.main_header .button {
+    width: 207px;
+    height: 51px;
+    border-radius: 2px;
+    font-family: Nunito Sans;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.main_header .calculate {
+    position: absolute;
+    top: 489px;
+    left: 134px;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+    border: none;
+    background: #E3B873;
+}
+
+.main_header .submit {
+    position: absolute;
+    top: 489px;
+    left: 361px;
+    background: none;
+    border: 1px solid #FFFFFF;
+}
+
