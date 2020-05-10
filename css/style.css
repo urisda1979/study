@@ -14,16 +14,22 @@ a {
 
 .header {
     position: relative;
-    width: 1440px;
+    width: 100%;
     height: 790px;
     background: #131313;
 }
 
+.container {
+    max-width: 1256px;
+    margin: 0 auto;
+    padding: 0;
+}
+
 .navbar {
-    position: absolute;
+    /*position: absolute;
     width: 1256px;
     left: 92px;
-    top: 0;
+    top: 0;*/
     padding-top: 37px;
     font-family: Nunito Sans;
     font-size: 11px;
@@ -95,12 +101,9 @@ a {
 
 .main_header {
     position: absolute;
-    left: 0%;
-    right: 0.14%;
-    top: 10.51%;
-    bottom: 0%;
-    background: rgba(0, 0, 0, 0.7);
-    background-image: url('../img/background-image.jpg');
+    width: 100%;
+    height: auto;
+    background: url('../img/background-image.jpg');
 }
 
 .main_header .title {
@@ -166,3 +169,67 @@ a {
     border: 1px solid #FFFFFF;
 }
 
+.projects {
+    position: relative;
+    width: 1440px;
+    height: 2540px;
+    background: #FFFFFF;
+}
+
+.projects .completed_projects {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -1px;
+    bottom: 57.72%;
+    background: #131313;
+}
+
+.projects .completed_projects .menu_projects {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 623px;
+    height: 24px;
+    left: 627px;
+    top: 107px;
+    padding: 0;
+    margin: 0;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+.projects .completed_projects .menu_projects li a {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.projects .completed_projects .menu_projects li .active {
+    color: #E3B873;
+    text-decoration: underline;
+}
+
+.projects .completed_projects .title_projects {
+    position: absolute;
+    left: 134px;
+    top: 176px;
+    width: 253px;
+    height: 66px;
+    margin: 0;
+    font-family: Yeseva One;
+    font-style: normal;
+    
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+.projects .completed_projects .title {
+    font-weight: normal;
+    font-size: 27px;
+    margin: 0;
+}
