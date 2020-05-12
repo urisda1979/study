@@ -10,7 +10,6 @@ body {
 
 .link {
     color: #ffffff;
-    list-style-type: none;
     text-decoration: none;
 }
 
@@ -35,7 +34,6 @@ body {
     font-family: Yeseva One;
     font-style: normal;
     font-weight: normal;
-    font-size: 40px;
     text-transform: uppercase;
     color: #FFFFFF;
 }
@@ -79,16 +77,19 @@ body {
     color: #E3B873;   
 }
 
-.navbar-menu {
+.menu {
     display: flex;
-    margin-left: 91px;
     margin-top: 0;
     margin-bottom: 0;
     padding: 0;
-    width: 581px;
     justify-content: space-between;
-    color: #ffffff;
     list-style-type: none;
+}
+
+.navbar-menu {
+    margin-left: 91px;
+    width: 581px;
+    color: #ffffff;
 }
 
 .navbar-phone {
@@ -114,6 +115,7 @@ body {
 .main-title {
     margin: 0;
     padding: 194px 0 0 42px;
+    font-size: 40px;
     line-height: 53px;
 }
 
@@ -150,4 +152,42 @@ body {
     margin: 0;
     padding: 0;
     background: #131313;
+}
+
+.projects-menu {
+    width: 623px;
+    padding-top: 107px;
+    padding-left: 581px;
+}
+
+.active span {
+    position: relative;
+}
+
+.active span:after {
+    display: block;
+    width: 100%;
+    content: '';
+    position: absolute;
+    border-bottom: 2px solid #E3B873;
+    bottom: 0;
+}
+
+.projects-title {
+    width: 253px;
+    margin: 0;
+    padding-top: 45px;
+    padding-left: 42px;
+    font-size: 27px;
+    line-height: 37px;
+    color: #E3B873;
+}
+
+.projects-text {
+    width: 442px;
+    margin-top: 34px;
+    margin-left: 42px;
+    padding: 0;
+    font-size: 14px;
+    line-height: 27px;
 }
