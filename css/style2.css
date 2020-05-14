@@ -191,3 +191,12 @@ body {
     font-size: 14px;
     line-height: 27px;
 }
+
+.image {
+    display: flex;
+    width: 679px;
+    height: 482px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
