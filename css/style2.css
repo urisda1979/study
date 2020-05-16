@@ -151,3 +151,23 @@ body {
     padding: 0;
     background: #131313;
 }
+
+.projects-title {
+    margin-left: 42px;
+    width: 253px;
+    font-size: 27px;
+    line-height: 37px;
+    color: #E3B873;
+}
+
+.projects-menu {
+    display: flex;
+    margin-top: 0;
+    margin-left: 534px;
+    padding-top: 107px;
+    width: 623px;
+    justify-content: space-between;
+    font-family: Yeseva One;
+    font-size: 14px;
+    text-transform: uppercase;   
+}

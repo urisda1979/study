@@ -12,6 +12,12 @@ a {
     text-decoration: none;
 }
 
+.container {
+    max-width: 1256px;
+    margin: auto;
+    padding: 0;
+}
+
 .header {
     position: relative;
     width: 100%;
@@ -26,8 +32,12 @@ a {
 }
 
 .navbar {
+<<<<<<< HEAD
     /*position: absolute;
     width: 1256px;
+=======
+    position: absolute;
+>>>>>>> ce5db34d2b53df2f0e216cbbe420cb6472429ab5
     left: 92px;
     top: 0;*/
     padding-top: 37px;
