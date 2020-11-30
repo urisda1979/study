@@ -1,0 +1,258 @@
+$var1: #FFFFFF;
+$var2: #E3B873;
+$var3: #131313;
+$media: screen;
+$feature: max-device-width;
+$value: 375px;
+
+
+@font-face {
+	src: url('../fonts/NunitoSans-Regular.ttf');
+	font-family: "Nunito Sans";
+}
+@font-face {
+    src: url('../fonts/YesevaOne-Regular.ttf');
+    font-family: "YesevaOne";
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Nunito Sans;
+	font-weight: normal;
+	font-style: normal;
+	color: $var1;
+}
+.link {
+	color: $var1;
+    text-decoration: none;
+    &:hover {
+        color: $var2;
+    }
+}
+.active {
+	color: $var2;
+	span {
+		position: relative;
+		&:after {
+			display: block;
+			width: 100%;
+			content: '';
+			position: absolute;
+			border-bottom: 2px solid $var2;
+			bottom: 0;
+		}
+	}
+}
+.header {
+	width: 100%;
+	height: 790px;
+	background: $var3;
+}
+.container {
+	max-width: 1256px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+}
+.title {
+	font-family: YesevaOne;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: $var1;
+	&-city {
+		color: $var2;
+	}
+	&_block {
+		color: $var2;
+		font-size: 18px;
+		margin-bottom: 9px;
+	}
+}
+.button {
+	width: 161px;
+	height: 37px;
+	background: none;
+	box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border: 2px solid;
+    border-radius: 2px;
+    text-transform: uppercase;
+	cursor: pointer;
+	font-style: italic;
+	font-size: 11px;
+	color: $var1;
+	&-calculate {
+		width: 207px;
+		height: 51px;
+		margin-top: 41px;
+		margin-left: 42px;
+	}
+	&-submit {
+		width: 207px;
+		height: 51px;
+		margin-top: 41px;
+		margin-left: 20px;
+	}
+    &:hover {
+        background-color: $var2;
+        border: none;
+    }
+}
+.navbar {
+	display: flex;
+	height: 83px;
+	align-items: center;
+	padding: 0;
+	background: $var3;
+	&-text {
+		font-size: 11px;
+		text-transform: uppercase;
+	}
+	&-logo {
+		width: 180px;
+		color: $var2;
+	}
+	&-menu {
+		margin-left: 91px;
+		width: 581px;
+		color: $var1;
+	}
+	&-phone {
+		display: flex;
+		width: 126px;
+		text-align: right;
+        margin-left: 68px;
+        &:hover {
+        text-decoration: underline;
+        }
+	}
+	&-button {
+		margin-left: 45px;
+	}
+}
+.menu {
+	display: flex;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+	justify-content: space-between;
+	list-style-type: none;
+}
+.main_header {
+	width: 100%;
+	height: 707px;
+	background: url('../img/background-image.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.main-title {
+	margin: 0;
+	padding: 194px 0 0 42px;
+	font-size: 40px;
+	line-height: 53px;
+}
+.main-text {
+	width: 504px;
+	margin: 19px 0 0 42px;
+	font-size: 22px;
+	line-height: 36px;
+}
+.projects {
+	width: 100%;
+	height: 1074px;
+	margin: 0;
+	padding: 0;
+    background: $var3;
+    &-image {
+        position: absolute;
+        right: 15px;
+        top: 53px;
+        width: 679px;
+        height: 482px;
+        margin: 0;
+    }
+	&-menu {
+		width: 623px;
+		padding-top: 107px;
+        padding-left: 581px;
+        & .link:hover {
+            color: $var2;
+            text-decoration: underline;
+        }
+	}
+	&-title {
+		width: 253px;
+		margin: 0;
+		padding-top: 53px;
+		padding-left: 42px;
+		font-size: 27px;
+		line-height: 37px;
+		color: $var2;
+	}
+	&-text {
+		display: flex;
+		width: 442px;
+		margin-top: 34px;
+		margin-left: 42px;
+		padding: 0;
+		font-size: 14px;
+		line-height: 27px;
+	}
+}
+.main_projects {
+	position: relative;
+}
+
+.describe {
+	display: flex;
+	flex-direction: row;
+	margin-left: 42px;
+}
+.left-block {
+	display: flex;
+	flex-direction: column;
+	width: 161px;
+}
+.text_block {
+	font-size: 13px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.right-block {
+	margin-left: 29px;
+}
+.up-row {
+	margin-top: 42px;
+}
+.down-row {
+	margin-top: 34px;
+}
+.arrows {
+	width: 205px;
+	height: 13px;
+	margin-top: 79px;
+	margin-left: 42px;
+}
+
+
+@media #{$media} and ($feature: $value) {
+    .container {
+        max-width: 340px;
+    }
+    .menu, 
+    .navbar-button {
+        display: none;
+    } 
+    .main_header {
+        width: 100%;
+        height: 476px;
+        background: linear-gradient(rgba(0, 0, 0, 0.7)), url('../img/image4_7.png');
+    }
+    .main-title {
+        margin: 0;
+        padding: 85px 0 0 0;
+        font-size: 23px;
+        line-height: 31px;
+    }
+}
