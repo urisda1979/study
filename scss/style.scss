@@ -30,6 +30,14 @@ h3 {
 	text-transform: uppercase;
 	font-weight: 400;
 }
+
+.container {
+	max-width: 1256px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+}
+
 .link {
 	color: $var1;
     text-decoration: none;
@@ -51,17 +59,7 @@ h3 {
 		}
 	}
 }
-.header {
-	width: 100%;
-	height: 790px;
-	background: $var3;
-}
-.container {
-	max-width: 1256px;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 0;
-}
+
 .title {
 	font-family: YesevaOne;
 	font-style: normal;
@@ -77,9 +75,8 @@ h3 {
 		margin-bottom: 9px;
 	}
 }
+
 .button {
-	width: 161px;
-	height: 37px;
 	background: none;
 	box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
     border: 2px solid;
@@ -89,33 +86,29 @@ h3 {
 	font-style: italic;
 	font-size: 11px;
 	color: $var1;
-	&-calculate {
-		width: 207px;
-		height: 51px;
-		margin-top: 41px;
-		margin-left: 42px;
-	}
-	&-submit {
-		width: 207px;
-		height: 51px;
-		margin-top: 41px;
-		margin-left: 20px;
-	}
     &:hover {
         background-color: $var2;
         border: none;
     }
 }
+
+.menu {
+	display: flex;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+	justify-content: space-between;
+	list-style-type: none;
+}
+
 .navbar {
 	display: flex;
 	height: 83px;
 	align-items: center;
 	padding: 0;
 	background: $var3;
-	&-text {
-		font-size: 11px;
-		text-transform: uppercase;
-	}
+	font-size: 11px;
+	text-transform: uppercase;
 	&-logo {
 		width: 180px;
 		color: $var2;
@@ -136,44 +129,63 @@ h3 {
 	}
 	&-button {
 		margin-left: 45px;
+		width: 161px;
+		height: 37px;
 	}
 }
-.menu {
-	display: flex;
-	margin-top: 0;
-	margin-bottom: 0;
-	padding: 0;
-	justify-content: space-between;
-	list-style-type: none;
-}
-.main_header {
+
+.header {
 	width: 100%;
-	height: 707px;
-	background: url('../img/background-image.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
+	height: 790px;
+	background: $var3;
+	&-content {
+		width: 100%;
+		height: 707px;
+		background: url('../img/background-image.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	&-title {
+		margin: 0;
+		padding: 194px 0 0 42px;
+		font-size: 40px;
+		line-height: 53px;
+	}
+	&-text {
+		width: 504px;
+		margin: 19px 0 0 42px;
+		font-size: 22px;
+		line-height: 36px;
+	}
+	&-button {
+		width: 207px;
+		height: 51px;
+		margin-top: 41px;
+	}
 }
-.main-title {
-	margin: 0;
-	padding: 194px 0 0 42px;
-	font-size: 40px;
-	line-height: 53px;
+
+.calculate-button {
+	margin-left: 42px;
 }
-.main-text {
-	width: 504px;
-	margin: 19px 0 0 42px;
-	font-size: 22px;
-	line-height: 36px;
+.submit-button {
+	margin-left: 20px;
 }
+
 .projects {
 	width: 100%;
 	height: 1074px;
 	margin: 0;
 	padding: 0;
-    background: $var3;
+	background: $var3;
+	&-content {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
     &-image {
 		margin-top: 52px;
 		margin-left: 50px;
+		background: url('../img/image\ 2.1.jpg');
         width: 679px;
         height: 482px;
     }
@@ -204,10 +216,6 @@ h3 {
 		font-size: 14px;
 		line-height: 27px;
 	}
-}
-.main_projects {
-	display: flex;
-	flex-direction: row;
 }
 
 .describe {
@@ -261,32 +269,36 @@ h3 {
 	}
 	.header {
 		height: 476px;
+		&-content {
+			width: 100%;
+			height: 476px;
+			background: linear-gradient(rgba(0, 0, 0, 0.7)), url('../img/image4_7.png');
+		}
+		&-title {
+			margin: 0;
+			padding: 85px 0 0 0;
+			font-size: 23px;
+			line-height: 31px;
+		}
+		&-text {
+			width: 340px;
+			height: 94px;
+			margin: 16px 0 6px 0;
+			font-size: 14px;
+			line-height: 19px;
+		}
 	}
     .menu, 
     .navbar-button {
         display: none;
     } 
-    .main_header {
-        width: 100%;
-        height: 476px;
-        background: linear-gradient(rgba(0, 0, 0, 0.7)), url('../img/image4_7.png');
-    }
-    .main-title {
-        margin: 0;
-        padding: 85px 0 0 0;
-        font-size: 23px;
-        line-height: 31px;
-	}
-	.main-text {
-		width: 340px;
-		height: 94px;
-		margin: 16px 0 6px 0;
-		font-size: 14px;
-		line-height: 19px;
-	}
+   
 	.button {
 		width: 100%;
 		height: 51px;
 		margin: 26px 0 0 0;
+	}
+	.projects-image {
+		width: 340px;
 	}
 }
