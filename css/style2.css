@@ -148,7 +148,6 @@ h3 {
   .projects-image {
     margin-top: 52px;
     margin-left: 50px;
-    background: url("../img/image 2.1.jpg");
     width: 679px;
     height: 482px; }
   .projects-menu {
@@ -174,6 +173,11 @@ h3 {
     padding: 0;
     font-size: 14px;
     line-height: 27px; }
+
+.image-desktop {
+  display: inline-block; }
+.image-mobile {
+  display: none; }
 
 .describe {
   display: flex;
@@ -249,6 +253,28 @@ h3 {
     margin: 26px 0 0 0; }
 
   .projects-image {
-    width: 340px; } }
+    width: 340px;
+    height: 242px;
+    margin: 14px auto; }
+  .projects-text {
+    width: 311px;
+    height: 86px;
+    margin: 0 auto;
+    padding: 22px auto;
+    font-size: 11px;
+    line-height: 17px;
+    text-align: center; }
+  .projects-title {
+    margin: 0 auto;
+    padding-top: 53px;
+    padding-left: 42px;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center; }
+
+  .image-desktop {
+    display: none; }
+  .image-mobile {
+    display: inline-block; } }
 
 /*# sourceMappingURL=style2.css.map */

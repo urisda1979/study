@@ -1,0 +1,77 @@
+$var1: #FFFFFF;
+$var2: #E3B873;
+$var3: #131313;
+$media: screen;
+$feature: max-device-width;
+$value: 375px;
+
+@media #{$media} and ($feature: $value) {
+    .container {
+		width: 340px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.header {
+		height: 476px;
+		&-content {
+			width: 100%;
+			height: 476px;
+			background: linear-gradient(rgba(0, 0, 0, 0.7)), url('../img/image4_7.png');
+		}
+		&-title {
+			margin: 0;
+			padding: 85px 0 0 0;
+			font-size: 23px;
+			line-height: 31px;
+		}
+		&-text {
+			width: 340px;
+			height: 94px;
+			margin: 16px 0 6px 0;
+			font-size: 14px;
+			line-height: 19px;
+		}
+	}
+    .menu, 
+    .navbar-button {
+        display: none;
+    } 
+   
+	.button {
+		width: 100%;
+		height: 51px;
+		margin: 26px 0 0 0;
+	}
+	.projects {
+		&-image {
+		width: 340px;
+		height: 242px;
+		margin: 14px auto;
+		}
+		&-text {
+			width: 311px;
+			height: 86px;
+			margin: 0 auto;
+			padding: 22px auto;
+			font-size: 11px;
+			line-height: 17px;
+			text-align: center;
+		}
+		&-title {
+			margin: 0 auto;
+			padding-top: 53px;
+			padding-left: 42px;
+			font-size: 22px;
+			line-height: 30px;
+			text-align: center;
+		}
+	}
+	.image {
+		&-desktop {
+			display: none;
+		}
+		&-mobile {
+			display: inline-block;
+		}
+	}
+}
